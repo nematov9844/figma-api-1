@@ -57,11 +57,11 @@ let users = [
 ];
 
 
-app.get('/api/data', (req, res) => {
+app.get('/api/users', (req, res) => {
     res.json(users);
 });
 
-app.post('/api/data', (req, res) => {
+app.post('/api/users', (req, res) => {
     const user = req.body;
     users.push(user);
     res.status(201).json(user);
